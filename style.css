@@ -238,3 +238,65 @@ section{
         margin-top: 15px;
     }
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    overflow-y: scroll; /* Allow vertical scrolling */
+    background-color: black;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh; /* Make sure it takes the full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    height: auto; /* Allow it to grow based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container .image {
+    width: 80%; /* Adjust the width to fit better */
+    max-width: 500px; /* Set a max-width so it doesn't get too big */
+    height: auto; /* Keep the height proportional */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #077b32;
+    margin: 0 auto;
+}
+
+.main-container .image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 884px) {
+    .main-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .main-container .image {
+        width: 60%; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 440px) {
+    .main-container .image {
+        width: 70%; /* Further scale down for very small screens */
+    }
+}
