@@ -273,7 +273,7 @@ section {
 .main-container .image {
     width: 80%; /* Adjust the width to fit better */
     max-width: 500px; /* Set a max-width so it doesn't get too big */
-    height: auto; /* Keep the height proportional */
+    height: 80; /* Keep the height proportional */
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 50px #077b32;
@@ -284,11 +284,6 @@ section {
     width: 100%;
     height: auto;
 }
-
-@media (max-width: 884px) {
-    .main-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
 
     .main-container .image {
         width: 60%; /* Adjust image size for smaller screens */
