@@ -26,7 +26,7 @@ body {
 
 .main-container .image {
     width: 390px; /* iPhone 15 screen width */
-    height: 100px;
+    height: 500px;
     max-height: 40vh;
     border-radius: 50%;
     overflow: hidden;
