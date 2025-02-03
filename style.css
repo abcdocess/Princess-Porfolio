@@ -30,8 +30,8 @@ body {
     max-height: 70vh;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 30px #077b32;
-    border: 5px solid white; /* Adjusted border size */
+    box-shadow: 0 0 20px #077b32;
+    border: 2px solid white; /* Adjusted border size to fit */
 }
 
 .main-container .image img {
